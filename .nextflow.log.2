@@ -1,0 +1,74 @@
+Sep-07 12:20:28.522 [main] DEBUG nextflow.cli.Launcher - $> nextflow main.nf --num1 3 --num2 5 --product 's3://convergence-default-data/adyan/multiply'
+Sep-07 12:20:28.634 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.04.3
+Sep-07 12:20:28.721 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [fabulous_davinci] - revision: a64c248942
+Sep-07 12:20:28.878 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/Users/alexandrad/.nextflow/plugins
+Sep-07 12:20:28.881 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-07 12:20:28.882 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
+Sep-07 12:20:28.891 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-07 12:20:28.893 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-07 12:20:28.896 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Sep-07 12:20:28.921 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-07 12:20:28.973 [main] DEBUG nextflow.Session - Session uuid: 89c598b5-ae6d-4a0b-935e-f9fd80988183
+Sep-07 12:20:28.974 [main] DEBUG nextflow.Session - Run name: fabulous_davinci
+Sep-07 12:20:28.975 [main] DEBUG nextflow.Session - Executor pool size: 8
+Sep-07 12:20:29.030 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.04.3 build 5560
+  Created: 21-07-2021 15:09 UTC (11:09 EDT)
+  System: Mac OS X 11.5
+  Runtime: Groovy 3.0.7 on Java HotSpot(TM) 64-Bit Server VM 11.0.12+8-LTS-237
+  Encoding: UTF-8 (UTF-8)
+  Process: 89107@Alexandras-Air [192.168.1.184]
+  CPUs: 8 - Mem: 8 GB (18.9 MB) - Swap: 3 GB (1 GB)
+Sep-07 12:20:29.044 [main] DEBUG nextflow.Session - Work-dir: /Users/alexandrad/Desktop/multiply/work [Mac OS X]
+Sep-07 12:20:29.044 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/alexandrad/Desktop/multiply/bin
+Sep-07 12:20:29.058 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-07 12:20:29.081 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-07 12:20:29.181 [main] DEBUG nextflow.Session - Session start invoked
+Sep-07 12:20:29.969 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-07 12:20:30.037 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: multiply
+Sep-07 12:20:30.086 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-07 12:20:30.086 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-07 12:20:30.098 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-07 12:20:30.104 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=8 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Sep-07 12:20:30.272 [main] DEBUG nextflow.Session - Ignite dataflow network (1)
+Sep-07 12:20:30.273 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > multiply
+Sep-07 12:20:30.274 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Sep-07 12:20:30.274 [main] DEBUG nextflow.Session - Session await
+Sep-07 12:20:30.380 [Actor Thread 3] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-amazon version: 1.0.5
+Sep-07 12:20:30.385 [Actor Thread 3] INFO  nextflow.plugin.PluginUpdater - Downloading plugin nf-amazon@1.0.5
+Sep-07 12:20:37.084 [Actor Thread 3] INFO  org.pf4j.util.FileUtils - Expanded plugin zip 'nf-amazon-1.0.5.zip' in 'nf-amazon-1.0.5'
+Sep-07 12:20:37.112 [Actor Thread 3] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-amazon@1.0.5' resolved
+Sep-07 12:20:37.113 [Actor Thread 3] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-amazon@1.0.5'
+Sep-07 12:20:37.132 [Actor Thread 3] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-amazon@1.0.5
+Sep-07 12:20:37.155 [Actor Thread 3] DEBUG nextflow.file.FileHelper - > Added 'S3FileSystemProvider' to list of installed providers [s3]
+Sep-07 12:20:37.155 [Actor Thread 3] DEBUG nextflow.file.FileHelper - Started plugin 'nf-amazon' required to handle file: s3://convergence-default-data/adyan/multiply
+Sep-07 12:20:37.164 [Actor Thread 3] DEBUG nextflow.file.FileHelper - Creating a file system instance for provider: S3FileSystemProvider
+Sep-07 12:20:37.188 [Actor Thread 3] DEBUG nextflow.Global - Using AWS credential defined in `default` section in file: /Users/alexandrad/.aws/credentials
+Sep-07 12:20:37.189 [Actor Thread 3] DEBUG nextflow.file.FileHelper - AWS S3 config details: {secret_key=BaW42R.., region=us-east-1, access_key=AKIA2X..}
+Sep-07 12:20:37.995 [Actor Thread 3] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: s3://convergence-default-data/adyan/multiply -- Cause: java.nio.file.NoSuchFileException: s3://convergence-default-data//convergence-default-data/adyan/multiply
+Sep-07 12:20:38.089 [Actor Thread 3] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: s3://convergence-default-data/adyan/multiply -- Cause: java.nio.file.NoSuchFileException: s3://convergence-default-data//convergence-default-data/adyan/multiply
+Sep-07 12:20:38.097 [Actor Thread 3] DEBUG n.util.BlockingThreadExecutorFactory - Thread pool name=FileTransfer; maxThreads=24; maxQueueSize=72; keepAlive=1m
+Sep-07 12:20:38.104 [FileTransfer-thread-1] DEBUG nextflow.file.FilePorter - Copying foreign file s3://convergence-default-data/adyan/multiply to work dir: /Users/alexandrad/Desktop/multiply/work/stage/a1/bae1defba8538df51eda5d8cb68540/multiply
+Sep-07 12:20:38.195 [Actor Thread 3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'multiply'
+
+Caused by:
+  Can't stage file s3:///convergence-default-data/adyan/multiply -- file does not exist
+
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Sep-07 12:20:38.202 [Actor Thread 3] DEBUG nextflow.Session - Session aborted -- Cause: Can't stage file s3:///convergence-default-data/adyan/multiply -- file does not exist
+Sep-07 12:20:38.307 [Actor Thread 3] DEBUG nextflow.Session - The following nodes are still active:
+[process] multiply
+  status=ACTIVE
+  port 0: (value) bound ; channel: num1
+  port 1: (value) bound ; channel: num2
+  port 2: (value) bound ; channel: product.txt
+  port 3: (cntrl) -     ; channel: $
+
+Sep-07 12:20:38.313 [main] DEBUG nextflow.Session - Session await > all process finished
+Sep-07 12:20:38.313 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-07 12:20:38.334 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Sep-07 12:20:38.534 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Sep-07 12:20:38.534 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-amazon@1.0.5'
+Sep-07 12:20:38.535 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-amazon
+Sep-07 12:20:38.554 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,4 @@
+2021-09-07 12:19:54	2s	prickly_mcclintock	ERR	a64c248942a39bb108256d0a4eaf0e32	e62fe69e-2780-46f3-a592-a12288cf6b91	nextflow main.nf --num1 3 --num2 5 --outputDir 's3://convergence-default-data/adyan/multiply'
+2021-09-07 12:20:29	9.5s	fabulous_davinci	ERR	a64c248942a39bb108256d0a4eaf0e32	89c598b5-ae6d-4a0b-935e-f9fd80988183	nextflow main.nf --num1 3 --num2 5 --product 's3://convergence-default-data/adyan/multiply'
+2021-09-07 12:28:10	-	festering_lamarr	-	a4ac92916a24c051b177c07b01373314	0fff47b4-d537-414c-8990-77b984eff433	nextflow main.nf --num1 3 --num2 5 --product 's3://convergence-default-data/adyan/multiply'
+2021-09-07 12:28:52	4.4s	jovial_fermi	OK	a93d0408655aa98e654604b8082d5e62	26ebb539-f918-475f-ac1a-daf0b71314e3	nextflow main.nf --num1 3 --num2 5 --product 's3://convergence-default-data/adyan/multiply'

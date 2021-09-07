@@ -1,0 +1,57 @@
+Sep-07 12:19:53.741 [main] DEBUG nextflow.cli.Launcher - $> nextflow main.nf --num1 3 --num2 5 --outputDir 's3://convergence-default-data/adyan/multiply'
+Sep-07 12:19:53.840 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.04.3
+Sep-07 12:19:53.921 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [prickly_mcclintock] - revision: a64c248942
+Sep-07 12:19:54.081 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/Users/alexandrad/.nextflow/plugins
+Sep-07 12:19:54.083 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-07 12:19:54.085 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
+Sep-07 12:19:54.106 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-07 12:19:54.107 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-07 12:19:54.110 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Sep-07 12:19:54.129 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-07 12:19:54.184 [main] DEBUG nextflow.Session - Session uuid: e62fe69e-2780-46f3-a592-a12288cf6b91
+Sep-07 12:19:54.184 [main] DEBUG nextflow.Session - Run name: prickly_mcclintock
+Sep-07 12:19:54.188 [main] DEBUG nextflow.Session - Executor pool size: 8
+Sep-07 12:19:54.293 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.04.3 build 5560
+  Created: 21-07-2021 15:09 UTC (11:09 EDT)
+  System: Mac OS X 11.5
+  Runtime: Groovy 3.0.7 on Java HotSpot(TM) 64-Bit Server VM 11.0.12+8-LTS-237
+  Encoding: UTF-8 (UTF-8)
+  Process: 89051@Alexandras-Air [192.168.1.184]
+  CPUs: 8 - Mem: 8 GB (22 MB) - Swap: 3 GB (1 GB)
+Sep-07 12:19:54.318 [main] DEBUG nextflow.Session - Work-dir: /Users/alexandrad/Desktop/multiply/work [Mac OS X]
+Sep-07 12:19:54.319 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/alexandrad/Desktop/multiply/bin
+Sep-07 12:19:54.330 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-07 12:19:54.352 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-07 12:19:54.452 [main] DEBUG nextflow.Session - Session start invoked
+Sep-07 12:19:55.267 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-07 12:19:55.310 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: multiply
+Sep-07 12:19:55.367 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-07 12:19:55.367 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-07 12:19:55.373 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-07 12:19:55.380 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=8 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Sep-07 12:19:55.558 [main] DEBUG nextflow.Session - Ignite dataflow network (1)
+Sep-07 12:19:55.558 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > multiply
+Sep-07 12:19:55.559 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Sep-07 12:19:55.560 [main] DEBUG nextflow.Session - Session await
+Sep-07 12:19:55.690 [Actor Thread 3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'multiply'
+
+Caused by:
+  Not a valid path value: 
+
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Sep-07 12:19:55.704 [Actor Thread 3] DEBUG nextflow.Session - Session aborted -- Cause: Not a valid path value: 
+Sep-07 12:19:55.745 [Actor Thread 3] DEBUG nextflow.Session - The following nodes are still active:
+[process] multiply
+  status=ACTIVE
+  port 0: (value) bound ; channel: num1
+  port 1: (value) bound ; channel: num2
+  port 2: (value) bound ; channel: product.txt
+  port 3: (cntrl) -     ; channel: $
+
+Sep-07 12:19:55.752 [main] DEBUG nextflow.Session - Session await > all process finished
+Sep-07 12:19:55.752 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-07 12:19:55.766 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Sep-07 12:19:55.966 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Sep-07 12:19:55.997 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,56 @@
+Sep-07 12:28:52.457 [main] DEBUG nextflow.cli.Launcher - $> nextflow main.nf --num1 3 --num2 5 --product 's3://convergence-default-data/adyan/multiply'
+Sep-07 12:28:52.575 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.04.3
+Sep-07 12:28:52.654 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [jovial_fermi] - revision: a93d040865
+Sep-07 12:28:52.807 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/Users/alexandrad/.nextflow/plugins
+Sep-07 12:28:52.811 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-07 12:28:52.813 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
+Sep-07 12:28:52.828 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-07 12:28:52.829 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-07 12:28:52.832 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Sep-07 12:28:52.865 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-amazon@1.0.5' resolved
+Sep-07 12:28:52.915 [main] DEBUG nextflow.Session - Session uuid: 26ebb539-f918-475f-ac1a-daf0b71314e3
+Sep-07 12:28:52.915 [main] DEBUG nextflow.Session - Run name: jovial_fermi
+Sep-07 12:28:52.916 [main] DEBUG nextflow.Session - Executor pool size: 8
+Sep-07 12:28:52.971 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.04.3 build 5560
+  Created: 21-07-2021 15:09 UTC (11:09 EDT)
+  System: Mac OS X 11.5
+  Runtime: Groovy 3.0.7 on Java HotSpot(TM) 64-Bit Server VM 11.0.12+8-LTS-237
+  Encoding: UTF-8 (UTF-8)
+  Process: 89355@Alexandras-Air [192.168.1.184]
+  CPUs: 8 - Mem: 8 GB (21.5 MB) - Swap: 3 GB (1 GB)
+Sep-07 12:28:52.986 [main] DEBUG nextflow.Session - Work-dir: /Users/alexandrad/Desktop/multiply/work [Mac OS X]
+Sep-07 12:28:52.986 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/alexandrad/Desktop/multiply/bin
+Sep-07 12:28:52.999 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-07 12:28:53.016 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-07 12:28:53.126 [main] DEBUG nextflow.Session - Session start invoked
+Sep-07 12:28:53.960 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-07 12:28:54.023 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: multiply
+Sep-07 12:28:54.102 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-07 12:28:54.102 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-07 12:28:54.109 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-07 12:28:54.114 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=8 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Sep-07 12:28:54.266 [main] DEBUG nextflow.Session - Ignite dataflow network (1)
+Sep-07 12:28:54.267 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > multiply
+Sep-07 12:28:54.268 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Sep-07 12:28:54.269 [main] DEBUG nextflow.Session - Session await
+Sep-07 12:28:54.655 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-07 12:28:54.664 [Task submitter] INFO  nextflow.Session - [bf/d2bb28] Submitted process > multiply
+Sep-07 12:28:54.825 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: multiply; status: COMPLETED; exit: 0; error: -; workDir: /Users/alexandrad/Desktop/multiply/work/bf/d2bb2883a28ada82bcc8d78629b812]
+Sep-07 12:28:54.857 [Task monitor] DEBUG nextflow.plugin.PluginUpdater - Starting plugin nf-amazon version: 1.0.5
+Sep-07 12:28:54.858 [Task monitor] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-amazon@1.0.5'
+Sep-07 12:28:54.883 [Task monitor] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-amazon@1.0.5
+Sep-07 12:28:54.899 [Task monitor] DEBUG nextflow.file.FileHelper - > Added 'S3FileSystemProvider' to list of installed providers [s3]
+Sep-07 12:28:54.900 [Task monitor] DEBUG nextflow.file.FileHelper - Started plugin 'nf-amazon' required to handle file: s3://convergence-default-data/adyan/multiply
+Sep-07 12:28:54.908 [Task monitor] DEBUG nextflow.file.FileHelper - Creating a file system instance for provider: S3FileSystemProvider
+Sep-07 12:28:54.921 [Task monitor] DEBUG nextflow.Global - Using AWS credential defined in `default` section in file: /Users/alexandrad/.aws/credentials
+Sep-07 12:28:54.922 [Task monitor] DEBUG nextflow.file.FileHelper - AWS S3 config details: {secret_key=BaW42R.., region=us-east-1, access_key=AKIA2X..}
+Sep-07 12:28:55.952 [Task monitor] WARN  com.amazonaws.util.Base64 - JAXB is unavailable. Will fallback to SDK implementation which may be less performant
+Sep-07 12:28:56.040 [Task monitor] DEBUG n.util.BlockingThreadExecutorFactory - Thread pool name=FileTransfer; maxThreads=24; maxQueueSize=72; keepAlive=1m
+Sep-07 12:28:56.068 [main] DEBUG nextflow.Session - Session await > all process finished
+Sep-07 12:28:56.081 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-07 12:28:56.298 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=33ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Sep-07 12:28:56.403 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Sep-07 12:28:56.404 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-amazon@1.0.5'
+Sep-07 12:28:56.404 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-amazon
+Sep-07 12:28:56.425 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

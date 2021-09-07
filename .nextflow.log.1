@@ -1,0 +1,67 @@
+Sep-07 12:28:10.229 [main] DEBUG nextflow.cli.Launcher - $> nextflow main.nf --num1 3 --num2 5 --product 's3://convergence-default-data/adyan/multiply'
+Sep-07 12:28:10.399 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.04.3
+Sep-07 12:28:10.448 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [festering_lamarr] - revision: a4ac92916a
+Sep-07 12:28:10.578 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/Users/alexandrad/.nextflow/plugins
+Sep-07 12:28:10.582 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-07 12:28:10.583 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
+Sep-07 12:28:10.594 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-07 12:28:10.596 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-07 12:28:10.599 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Sep-07 12:28:10.634 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-amazon@1.0.5' resolved
+Sep-07 12:28:10.683 [main] DEBUG nextflow.Session - Session uuid: 0fff47b4-d537-414c-8990-77b984eff433
+Sep-07 12:28:10.684 [main] DEBUG nextflow.Session - Run name: festering_lamarr
+Sep-07 12:28:10.685 [main] DEBUG nextflow.Session - Executor pool size: 8
+Sep-07 12:28:10.746 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.04.3 build 5560
+  Created: 21-07-2021 15:09 UTC (11:09 EDT)
+  System: Mac OS X 11.5
+  Runtime: Groovy 3.0.7 on Java HotSpot(TM) 64-Bit Server VM 11.0.12+8-LTS-237
+  Encoding: UTF-8 (UTF-8)
+  Process: 89277@Alexandras-Air [192.168.1.184]
+  CPUs: 8 - Mem: 8 GB (24.2 MB) - Swap: 3 GB (1.1 GB)
+Sep-07 12:28:10.761 [main] DEBUG nextflow.Session - Work-dir: /Users/alexandrad/Desktop/multiply/work [Mac OS X]
+Sep-07 12:28:10.761 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/alexandrad/Desktop/multiply/bin
+Sep-07 12:28:10.775 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-07 12:28:10.795 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-07 12:28:10.900 [main] DEBUG nextflow.Session - Session start invoked
+Sep-07 12:28:11.721 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-07 12:28:11.785 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: multiply
+Sep-07 12:28:11.849 [main] DEBUG nextflow.Session - Session aborted -- Cause: Process `multiply` declares 2 input channels but 3 were specified
+Sep-07 12:28:11.884 [main] ERROR nextflow.cli.Launcher - Process `multiply` declares 2 input channels but 3 were specified
+nextflow.exception.ScriptRuntimeException: Process `multiply` declares 2 input channels but 3 were specified
+	at nextflow.script.ProcessDef.run(ProcessDef.groovy:171)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:52)
+	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:41)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:95)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:397)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:339)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at Script_d5183ee4$_runScript_closure2$_closure4.doCall(Script_d5183ee4:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:186)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:170)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:52)
+	at nextflow.script.ChainableDef$invoke_a.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at nextflow.script.BaseScript.runDsl2(BaseScript.groovy:191)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:200)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:221)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:212)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:120)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:302)
+	at nextflow.cli.Launcher.run(Launcher.groovy:475)
+	at nextflow.cli.Launcher.main(Launcher.groovy:657)
