@@ -3,6 +3,7 @@ params.num1 = ""
 params.num2 = ""
 params.product = ""
 process multiply {
+    container "736855904193.dkr.ecr.us-east-1.amazonaws.com/convergence-base"
     input:
         val num1
         val num2
