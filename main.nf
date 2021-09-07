@@ -7,7 +7,7 @@ process multiply {
     input:
         val num1
         val num2
-        path product
+        val product
     shell:
         '''
         echo "!{num1}*!{num2}" | bc > !{product}/product.txt
