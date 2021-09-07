@@ -1,17 +1,17 @@
 nextflow.enable.dsl=2
 params.num1 = ""
 params.num2 = ""
-params.outputDir = ""
+params.product = ""
 process multiply {
     input:
         val num1
         val num2
-        path outputDir
+        path product
     shell:
         '''
-        echo "!{num1}*!{num2}" | bc > !{outputDir}/product.txt
+        echo "!{num1}*!{num2}" | bc > !{product}/product.txt
         '''
 }
 workflow {
-    multiply(params.num1, params.num2, params.outputDir)
+    multiply(params.num1, params.num2, params.product)
 }
