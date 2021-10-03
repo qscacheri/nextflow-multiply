@@ -21,6 +21,7 @@ process multiply {
 }
 
 process getProductJSON {
+        container "736855904193.dkr.ecr.us-east-1.amazonaws.com/convergence-base"
     publishDir params.product, mode: "copy"
     input: 
         val product
