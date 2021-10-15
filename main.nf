@@ -10,10 +10,11 @@ process multiply {
         val num1
         val num2
     output:
-        env product
+        path("product.txt")
     shell:
         '''
         product=$(bc <<< "!{num1}*!{num2}")
+        echo $product > product.txt
         '''
 }
 
