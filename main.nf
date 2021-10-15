@@ -13,8 +13,7 @@ process multiply {
         path("product.txt")
     shell:
         '''
-        product=$(bc <<< "!{num1}*!{num2}")
-        echo $product > product.txt
+        echo "!{num1}*!{num2}" | bc > product.txt
         '''
 }
 
