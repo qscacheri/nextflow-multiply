@@ -8,7 +8,7 @@ params.num2 = ""
 params.product = ""
 process multiply {
     container "736855904193.dkr.ecr.us-east-1.amazonaws.com/convergence-base"
-    publishDir params.product, mode: "copy"
+    publishDir params.output.product._outputDir, mode: "copy"
     input:  
         val num1
         val num2
@@ -41,6 +41,6 @@ process getProductJSON {
 workflow {
     
     
-    multiply(params.num1._value, params.num2._value)
+    multiply(params.input.num1._value, params.input.num2._value)
     getProductJSON(multiply.out)
 }
